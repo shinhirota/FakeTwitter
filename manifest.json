@@ -1,0 +1,15 @@
+{
+  "name": "Fake twitter",
+  "description": "This extension replace all tweets with fake messages.",
+  "version": "0.1",
+  "content_scripts": [
+    {
+      "matches": ["https://twitter.com/*"],
+      "js": [
+        "jquery-3.1.1.min.js",
+        "fake.js"
+      ]
+    }
+  ],
+  "manifest_version": 2
+}
